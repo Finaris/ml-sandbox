@@ -29,7 +29,7 @@ class LinearModel:
         return self._bias + self._weight*feature
 
     def __str__(self):
-        return "{0} + w_1 * {1}".format(self._bias, self._weight)
+        return "{0} + {1} * x".format(self._bias, self._weight)
 
     def __repr__(self):
         return "LinearModel({0}, {1})".format(self._bias, self._weight)
